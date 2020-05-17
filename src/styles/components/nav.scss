@@ -1,0 +1,150 @@
+// Nav component styles
+
+.nav {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.nav__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 0;
+}
+
+.nav__branding {
+  align-items: center;
+  display: flex;
+}
+
+.nav__branding-logo {
+  font-size: 0;
+  margin-right: 20px;
+  width: 99px;
+}
+
+.nav__branding-logo-image {
+  width: 100%;
+}
+
+.nav__mobile-menu-trigger {
+  display: none;
+  padding: 7px 0;
+}
+
+.nav__mobile-menu-trigger:hover {
+  cursor: pointer;
+}
+
+.nav__branding-quote {
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 590px;
+}
+
+.nav__menu-link {
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav__menu-link:focus,
+.nav__menu-link:hover {
+  color: $color-green;
+}
+
+.nav__menu-link--active {
+  color: $color-green;
+}
+
+.nav__menu-link-button {
+  background-color: $color-green;
+  border-radius: 200px;
+  color: $color-white;
+  display: flex;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 14px 27px;
+  transition: 0.25s;
+}
+
+.nav__menu-link-button:hover {
+  background-color: $color-green-hover;
+  transition: 0.25s;
+}
+
+.nav__mobile-menu {
+  background-color: $color-white;
+  box-sizing: border-box;
+  display: none;
+  height: 120vh;
+  left: 0;
+  padding: 86px 25px 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
+.nav__mobile-menu-close-button {
+  display: inline-flex;
+  padding: 7px 2px;
+  position: absolute;
+  right: 20px;
+  top: 28px;
+}
+
+.nav__mobile-menu-close-button:hover {
+  cursor: pointer;
+}
+
+.nav__mobile-menu-item {
+  border-bottom: 1px solid $color-grey;
+  font-family: $font-main;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+}
+
+// .nav__mobile-menu-link-button {
+//   background-color: $color-green;
+//   bottom: 0;
+//   position: absolute;
+//   width: 0;
+// }
+
+@media only screen and (max-width: 915px) {
+  .nav__branding-quote {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .nav__container {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 30px 0 27px;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__mobile-menu-trigger {
+    display: inline-flex;
+  }
+}

@@ -1,0 +1,184 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.06);
+  height: 520px;
+  width: 485px;
+}
+
+.card__top-side {
+  height: 280px;
+  position: relative;
+  width: 100%;
+}
+
+.card__thumbnail-container {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.card__thumbnail-container::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.47) 100%
+  );
+  border-radius: 0 0 5px 5px;
+  bottom: 0;
+  content: "";
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  height: 91%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.card__thumbnail {
+  height: 100%;
+  font-size: 0;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.card__price {
+  bottom: 46px;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 900;
+  left: 33px;
+  position: absolute;
+  z-index: 2;
+}
+
+.card__price-period {
+  bottom: 27px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  left: 33px;
+  position: absolute;
+  z-index: 2;
+}
+
+.card__bottom-side {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  padding: 21px 33px 37px;
+}
+
+.card__locaion-date {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card__location {
+  color: #6472a3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card__posted-at {
+  color: #6c6c6c;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.card__data {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card__type {
+  background-color: #ffffff;
+  border-radius: 13px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  color: #000000;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+.card__boost {
+  align-items: center;
+  display: flex;
+}
+
+.card__premium,
+.card__trending {
+  align-items: center;
+  background: transparent;
+  border: none;
+  display: flex;
+}
+
+.card__premium:active,
+.card__premium:hover,
+.card__premium:focus,
+.card__trending:active,
+.card__trending:hover,
+.card__trending:focus {
+  cursor: pointer;
+}
+
+.card__trending {
+  margin-left: 5px;
+}
+
+.card__size-and-rooms {
+  color: #0144bb;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: auto;
+}
+
+.card__show-phone-nr {
+  background-color: #ebebeb;
+  border-radius: 5px;
+  color: #000000;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 35px;
+  padding: 11px 16px;
+  text-decoration: none;
+  transition: background-color 100ms ease;
+}
+
+.card__show-phone-nr:active,
+.card__show-phone-nr:hover,
+.card__show-phone-nr:focus {
+  background-color: #feca2f;
+}
+
+.card__add-fav {
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #000000;
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 5px 10px 35px;
+}
+
+.card__add-fav:active,
+.card__add-fav:hover,
+.card__add-fav:focus {
+  cursor: pointer;
+}
+
+.card__fav-icon {
+  margin-left: -30px;
+  position: absolute;
+}

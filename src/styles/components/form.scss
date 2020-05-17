@@ -1,0 +1,68 @@
+.input {
+  background-color: transparent;
+  border: none;
+  border: 2px solid $color-grey;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  padding: 20px 20px 20px 33px;
+  transition: border 150ms ease, color 150ms ease;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: $color-black-light;
+}
+
+.input:focus {
+  border: 2px solid $color-green;
+  color: $color-green;
+}
+
+.button-submit {
+  background-color: $color-green;
+  box-sizing: border-box;
+  color: $color-white;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 200px;
+  padding: 20px 30px;
+  transition: 0.25s;
+}
+
+.button-submit:focus,
+.button-submit:hover {
+  cursor: pointer;
+  background-color: $color-green-hover;
+  transition: 0.25s;
+}
+
+.textarea {
+  background-color: transparent;
+  border: none;
+  border: 2px solid $color-grey;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  padding: 20px 20px 20px 33px;
+  resize: vertical;
+  width: 100%;
+}
+
+.textarea::placeholder {
+  color: $color-black-light;
+}
+
+.textarea:focus {
+  border: 2px solid $color-green;
+  color: $color-green;
+}

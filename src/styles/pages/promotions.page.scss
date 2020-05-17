@@ -1,0 +1,108 @@
+.discount__text {
+  width: 697px;
+  padding: 50px;
+  background-color: #20A052;
+}
+
+.whiteText {
+  color: white;
+  font-weight: 700;
+}
+
+.order--button {
+  background-color: #FFFFFF;
+  border-radius: 200px;
+  color: $color-green;
+  display: flex;
+  font-family: "Inter UI", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 20px 27px;
+  cursor: pointer;
+}
+
+.actions--boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offer--section {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .offer:last-child {
+    margin-right: 0 !important;
+  }
+
+  .offer {
+    background-color: white;
+    padding: 35px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(33% - 10px);
+    border: 2px solid #F0F0F0;
+
+    .circle {
+      font-family: "Inter UI", sans-serif;
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      background-color: #20A052;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offer--title {
+      display: block;
+      font-family: "Inter UI", sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+    .offer--more {
+      font-family: "Inter UI", sans-serif;
+      display: block;
+      color:  #20A052;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 837px) {
+  .offer {
+    width: auto !important;
+  }
+  .discount__text {
+    width: auto;
+  }
+  .offer--title {
+    width: 250px !important;
+    font-size: 20px !important;
+    margin-bottom: 5px !important;
+    margin-top: 25px !important;
+  }
+  .offer--more {
+    font-size: 15px !important;
+  }
+
+  .offer--section {
+    overflow-y: scroll;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .offer--title {
+    width: 220px !important;
+  }
+  .discount__text {
+    padding: 30px;
+  }
+}

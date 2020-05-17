@@ -1,0 +1,106 @@
+.promotions-page {
+  position: relative;
+}
+
+.portal {
+  align-items: flex-start;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  left: 0;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 25px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.portal__content {
+  background-color: $color-white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 737px;
+  padding: 20px 50px 50px;
+  position: relative;
+  width: 100%;
+}
+
+.portal__close-button {
+  background-color: transparent;
+  border: none;
+  display: block;
+  font-size: 0;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+.portal__close-button:hover {
+  cursor: pointer;
+}
+
+.portal__title {
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.portal__image {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.portal__paragraph {
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  padding-right: 15%;
+}
+
+.portal__paragraph--strong {
+  font-weight: 700;
+}
+
+.portal__paragraph--strong-lite {
+  font-weight: 500;
+}
+
+.portal__ordered-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.portal__ordered-list-item {
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.portal__action-button {
+  align-items: center;
+  background-color: $color-green;
+  border: none;
+  border-radius: 200px;
+  color: $color-white;
+  display: inline-flex;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 500;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 15px 22px;
+}
+
+.portal__action-button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+@import "styles/reset";
+@import "styles/variables";
+@import "styles/text";
+@import "styles/components/nav";
+@import "styles/components/footer";
+@import "styles/components/form";
+@import "styles/components/portal";
+@import "styles/components/checkbox";
+@import "styles/components/card";
+@import "styles/components/feedback";
+@import "styles/components/blogs_preview";
+@import "styles/components/pop-up_show_phone";
+
+// Pages
+@import "styles/pages/contacts.page.scss";
+@import "styles/pages/services.page.scss";
+@import "styles/pages/book.page.scss";
+@import "styles/pages/services.open.scss";
+@import "styles/pages/index.page.scss";
+@import "styles/pages/promotions.page.scss";
+@import "styles/pages/services.open.cleaning.scss";
+@import "styles/pages/cleaning.windows.scss";
+
+.component-title {
+  color: $color-black;
+  font-family: $font-main;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 25px;
+}

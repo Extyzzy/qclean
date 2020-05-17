@@ -1,0 +1,48 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+.head-line-1 {
+  font-family: $font-main;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.head-line-2 {
+  font-family: $font-main;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.mobile-head-line-2 {
+  font-family: $font-main;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.mobile-paragraph {
+  font-family: $font-main;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+  .head-line-1 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .paragraph {
+    text-align: left;
+  }
+}
